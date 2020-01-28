@@ -1,4 +1,5 @@
 const ICrud = require('../interface/interfaceCrud')
+const sequelize = require("sequelize");
 
 
 class ContextStrategy  extends ICrud{
@@ -27,6 +28,9 @@ class ContextStrategy  extends ICrud{
         return  this._database.isConnected();
     }
 
+    connect(){
+        return  this._database.connect();
+    }
 }
 
 module.exports = ContextStrategy;
