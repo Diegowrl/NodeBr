@@ -70,6 +70,15 @@ class Myslq extends ICrud{
 
     }
 
+    async update(id,item){
+        return await this._Herois.update(item, {where : {id : id}})
+    }
+
+    async delete(id){
+        const query = id ? {id} : {}
+        return this._Herois.destroy({ where : query})
+    }
+
   
 
 }
