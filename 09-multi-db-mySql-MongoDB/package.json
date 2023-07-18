@@ -4,7 +4,7 @@
   "description": "docker run /\r     --name postgres /\r     -e POSTGRES_USER=diego /\r     -e POSTGRES_PASSWORD=12304560 \\\r     -e POSTGRES_DB=heroes \\\r     -p 5432:5432 \\\r     -d \\\r     postgress",
   "main": "mysqlExample.js",
   "dependencies": {
-    "mongoose": "^5.8.10",
+    "mongoose": "^5.13.20",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.3"
   },
